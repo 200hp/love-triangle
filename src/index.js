@@ -8,8 +8,8 @@ module.exports = function getLoveTrianglesCount(preferences= []){
   		let A = preferences[i] - 1;
   		if (A == i) continue;
   		let B = preferences[A] - 1;
-	    let C = preferences[B] - 1;
-	    count += i == C;
+  		let C = preferences[B] - 1;
+  		count += i == C;
   	}
 	return count/3;
 };
